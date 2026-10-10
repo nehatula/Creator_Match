@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator Login - CreatorMatch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body class="auth-body">
+
+    <a href="index.html" class="logo auth-logo">
+        Creator<span>Match</span>
+    </a>
+
+    <main class="auth-card">
+        <p class="eyebrow">CREATE · COLLABORATE · GROW</p>
+        <h1>Creator Login</h1>
+        <p class="muted">Log in to discover brands and collaboration opportunities.</p>
+
+        <form id="creatorLoginForm">
+            <label for="creatorEmail">Email Address</label>
+            <input
+                type="email"
+                id="creatorEmail"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label for="creatorPassword">Password</label>
+            <input
+                type="password"
+                id="creatorPassword"
+                placeholder="Enter your password"
+                required
+            >
+
+            <p id="creatorLoginMessage" class="message" role="alert"></p>
+
+            <button type="submit" class="btn full-width">
+                Login as Creator
+            </button>
+        </form>
+
+        <p class="form-bottom">
+            Not registered?
+            <a href="creator-register.html">Register here</a>
+        </p>
+
+        <p class="form-bottom">
+            <a href="index.html" class="back-link">← Back to Home</a>
+        </p>
+    </main>
+
+</body>
+</html>

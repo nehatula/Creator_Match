@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creator Registration | CreatorMatch</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body class="auth-body">
+  <a href="index.html" class="logo auth-logo">Creator<span>Match</span></a>
+
+  <main class="auth-card">
+    <p class="eyebrow">YOUR CREATOR JOURNEY STARTS HERE</p>
+    <h1>Join as a Creator</h1>
+    <p class="muted">Create your profile and find brands that match your niche.</p>
+
+    <form id="creatorRegisterForm">
+      <label for="creatorName">Full Name</label>
+      <input id="creatorName" name="name" required maxlength="80" placeholder="Your name">
+
+      <label for="creatorRegEmail">Email Address</label>
+      <input id="creatorRegEmail" name="email" type="email" required placeholder="you@example.com">
+
+      <label for="creatorRegPassword">Password</label>
+      <input id="creatorRegPassword" name="password" type="password" minlength="6" required placeholder="At least 6 characters">
+
+      <label for="creatorNiche">Content Niche</label>
+      <select id="creatorNiche" name="niche" required>
+        <option value="">Choose your niche</option>
+        <option>Fashion</option>
+        <option>Beauty</option>
+        <option>Food</option>
+        <option>Travel</option>
+        <option>Technology</option>
+        <option>Fitness</option>
+        <option>Lifestyle</option>
+        <option>Education</option>
+      </select>
+
+      <label for="creatorLocation">Location</label>
+      <input id="creatorLocation" name="location" required placeholder="e.g. Warangal">
+
+      <label for="creatorFollowers">Followers</label>
+      <input id="creatorFollowers" name="followers" type="number" min="0" value="1000" required>
+
+      <label for="creatorEngagement">Engagement Rate (%)</label>
+      <input id="creatorEngagement" name="engagement" type="number" min="0" max="100" step="0.1" value="3" required>
+
+      <button class="btn full-width" type="submit">Create Creator Account</button>
+      <p id="creatorRegisterMessage" class="message" role="alert"></p>
+    </form>
+
+    <p class="form-bottom">Already registered? <a href="creator-login.html">Login here</a></p>
+    <p class="form-bottom"><a href="index.html">← Back to Home</a></p>
+  </main>
+</body>
+</html>

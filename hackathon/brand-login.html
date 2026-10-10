@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Login - CreatorMatch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body class="auth-body">
+
+    <a href="index.html" class="logo auth-logo">
+        Creator<span>Match</span>
+    </a>
+
+    <main class="auth-card">
+        <p class="eyebrow">CONNECT WITH THE RIGHT CREATORS</p>
+        <h1>Brand Login</h1>
+        <p class="muted">Log in to discover creators and manage your favorites.</p>
+
+        <form id="brandLoginForm">
+            <label for="brandEmail">Business Email</label>
+            <input
+                type="email"
+                id="brandEmail"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label for="brandPassword">Password</label>
+            <input
+                type="password"
+                id="brandPassword"
+                placeholder="Enter your password"
+                required
+            >
+
+            <p id="brandLoginMessage" class="message" role="alert"></p>
+
+            <button type="submit" class="btn full-width">
+                Login as Brand
+            </button>
+        </form>
+
+        <p class="form-bottom">
+            Not registered?
+            <a href="brand-register.html">Register here</a>
+        </p>
+
+        <p class="form-bottom">
+            <a href="index.html" class="back-link">← Back to Home</a>
+        </p>
+    </main>
+
+</body>
+</html>

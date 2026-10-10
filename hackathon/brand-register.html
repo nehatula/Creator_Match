@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brand Registration | CreatorMatch</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body class="auth-body">
+  <a href="index.html" class="logo auth-logo">Creator<span>Match</span></a>
+
+  <main class="auth-card">
+    <p class="eyebrow">FIND YOUR NEXT CREATOR PARTNER</p>
+    <h1>Join as a Brand</h1>
+    <p class="muted">Create your brand profile and discover micro-creators.</p>
+
+    <form id="brandRegisterForm">
+      <label for="brandName">Brand Name</label>
+      <input id="brandName" name="name" required maxlength="80" placeholder="Your brand name">
+
+      <label for="brandRegEmail">Business Email</label>
+      <input id="brandRegEmail" name="email" type="email" required placeholder="brand@example.com">
+
+      <label for="brandRegPassword">Password</label>
+      <input id="brandRegPassword" name="password" type="password" minlength="6" required placeholder="At least 6 characters">
+
+      <label for="brandCategory">Industry</label>
+      <select id="brandCategory" name="category" required>
+        <option value="">Choose your industry</option>
+        <option>Fashion</option>
+        <option>Beauty</option>
+        <option>Food</option>
+        <option>Technology</option>
+        <option>Travel</option>
+        <option>Fitness</option>
+        <option>Lifestyle</option>
+        <option>Other</option>
+      </select>
+
+      <label for="brandLocation">Location</label>
+      <input id="brandLocation" name="location" required placeholder="e.g. Hyderabad">
+
+      <label for="brandDescription">About Your Brand</label>
+      <textarea id="brandDescription" name="description" rows="3" placeholder="Tell creators about your brand"></textarea>
+
+      <button class="btn full-width" type="submit">Create Brand Account</button>
+      <p id="brandRegisterMessage" class="message" role="alert"></p>
+    </form>
+
+    <p class="form-bottom">Already registered? <a href="brand-login.html">Login here</a></p>
+    <p class="form-bottom"><a href="index.html">← Back to Home</a></p>
+  </main>
+</body>
+</html>
